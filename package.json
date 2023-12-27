@@ -1,6 +1,6 @@
 {
-	"name": "@jimwong/preset-istanbul",
-	"version": "0.0.2",
+	"name": "@jimwong/babel-preset-istanbul",
+	"version": "0.0.1",
 	"description": "",
 	"main": "./dist/index.js",
 	"types": "./dist/types/index.d.ts",
@@ -17,7 +17,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jimwong666/preset-istanbul.git"
+		"url": "git+https://github.com/jimwong666/babel-preset-istanbul.git"
 	},
 	"keywords": [
 		"istanbul",
@@ -26,9 +26,9 @@
 	"author": "jim wong",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/jimwong666/preset-istanbul/issues"
+		"url": "https://github.com/jimwong666/babel-preset-istanbul/issues"
 	},
-	"homepage": "https://github.com/jimwong666/preset-istanbul#readme",
+	"homepage": "https://github.com/jimwong666/babel-preset-istanbul#readme",
 	"type": "module",
 	"devDependencies": {
 		"@babel/core": "^7.22.20",
