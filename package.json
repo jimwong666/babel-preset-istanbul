@@ -1,0 +1,51 @@
+{
+	"name": "@jimwong/preset-istanbul",
+	"version": "0.0.2",
+	"description": "",
+	"main": "./dist/index.js",
+	"types": "./dist/types/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"clean:dist": "rimraf dist",
+		"build:types": "npm run clean:dist && tsc -b ./tsconfig.types.json",
+		"build": "npm run build:types && rollup -c"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jimwong666/preset-istanbul.git"
+	},
+	"keywords": [
+		"istanbul",
+		"report"
+	],
+	"author": "jim wong",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jimwong666/preset-istanbul/issues"
+	},
+	"homepage": "https://github.com/jimwong666/preset-istanbul#readme",
+	"type": "module",
+	"devDependencies": {
+		"@babel/core": "^7.22.20",
+		"@babel/plugin-transform-runtime": "^7.22.15",
+		"@babel/preset-env": "^7.22.20",
+		"@rollup/plugin-babel": "^6.0.3",
+		"@rollup/plugin-commonjs": "^25.0.4",
+		"@rollup/plugin-json": "^6.0.0",
+		"@rollup/plugin-node-resolve": "^15.2.1",
+		"rimraf": "^5.0.1",
+		"rollup": "^3.29.2",
+		"rollup-plugin-terser": "^7.0.2",
+		"rollup-plugin-typescript2": "^0.35.0",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"@babel/helper-plugin-utils": "^7.22.5",
+		"@jimwong/babel-plugin-istanbul": "^4.1.27"
+	}
+}
